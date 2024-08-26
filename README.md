@@ -14,6 +14,10 @@ CTF-Java-Gadget专注于收集CTF中Java赛题的反序列化片段，项目地�
 
 ## ChangeLog
 
+20240826
+
+-   [x] 添加 CodeSigner#toString -> exec 链（来源：https://www.n1ght.cn/2024/04/17/java%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9Ecommons-collections-TransformedList%E8%A7%A6%E5%8F%91transform/）
+
 20240812
 
 -   [x] 添加 JtaTransactionManager#readObject -> JNDI 链
